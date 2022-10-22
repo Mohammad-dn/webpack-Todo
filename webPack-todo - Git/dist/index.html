@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webpack App</title>
+</head>
+
+
+<body>
+  <h1>
+    TODO
+</h1>
+<div id="alert" style="
+background-color: rgb(46, 113, 113);
+display:flex;
+justify-content:space-between;
+position: fixed;
+top: 0;
+width: 100%;
+right: -100%;
+transition: all 0.3s ease;
+">
+    <p>simple todo Alert</p>
+    <button id="close-alert">X</button>
+
+</div>
+<div class="" style="
+        background-image: url(subtle-prism.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 400px;
+        ">
+    <form style="
+        padding-top: 20px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2rem" id="form">
+        <input id="todoTitle" style="
+        border: solid 2px white;
+        border-radius: 8px;
+        background-color:rgb(178, 145, 145);
+        opacity: 70%;
+         width: 30%;
+         " type="text" placeholder="todo title ">
+        <textarea style="width: 30%; background-color:rgb(211, 165, 165);
+        opacity: 70%;
+         " name="TOdodesc" id="desc" cols="30" rows="10" placeholder="todo Description"></textarea>
+        <button id="submitbtn" style="border: none;
+                    border-radius: 8px;
+                    width: 20%;
+         background-color:cornflowerblue; " type="submit">
+            submit
+        </button>
+    </form>
+</div>
+<hr />
+<ul id="mainListItem" class="">
+</ul>
+  <script module src="bundle.js"></script>
+</body>
+
+</html>
